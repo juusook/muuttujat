@@ -1,21 +1,17 @@
-'''LUX on parvekkeellinen hytti yläkannella.
-A on ikkunallinen hytti autokannen yläpuolella.
-B on ikkunaton hytti autokannen yläpuolella.
-C on ikkunaton hytti autokannen alapuolella '''
+hyttiluokka = input("Enter the cabin class (LUX, A, B, or C): ")
+LUX = "Upper-deck cabin with a balcony."
+A = "Above the car deck, equipped with a window."
+B = "Windowless cabin above the car deck."
+C = "Windowless cabin below the car deck."
 
-hyttiluokka = input("Mikä hyttiluokka: ")
-LUX = ("LUX on parvekkeellinen hytti yläkannella.")
-A = ("A on ikkunaton hytti autokannen yläpuolella")
-B = ("B on ikkunaton hytti autokannen yläpuolella")
-C = ("C on ikkunaton hytti autokannen alapuolella")
 
-if hyttiluokka == "LUX" or "lux":
+if hyttiluokka == "LUX":
     print(LUX)
-elif hyttiluokka == "A" or "a":
+elif hyttiluokka == "A":
     print(A)
-elif hyttiluokka == "B" or "b":
+elif hyttiluokka == "B":
     print(B)
-elif hyttiluokka == "C" or "c":
+elif hyttiluokka == "C":
     print(C)
 else:
-    print("Väärä hyttiluokka!")
+    print("Invalid cabin class.")

@@ -1,3 +1,2 @@
-import math
-
-math.pi
+nimi = input("Anna nimesi️: ").lower()
+print(nimi)
