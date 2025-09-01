@@ -1,14 +1,18 @@
-user = "python"
-password = "rules"
+correct_user = "python"
+correct_password = "rules"
+max_attempts = 5
+attempt = 0
 
-annettu_user = input("Enter username: ")
-annettu_password = input("Enter password: ")
-counter = 0
+while attempt < max_attempts:
+    username = input("Enter username: ")
+    password = input("Enter password: ")
 
-while (annettu_user != user or annettu_password != password) and counter < 4:
-    print("Access denied")
-    counter += 1
-    annettu_user = input("Enter username: ")
-    annettu_password = input("Enter password: ")
-
-print("Welcome")
+    if username == correct_user and password == correct_password:
+        print("Welcome")
+        break
+    else:
+        attempt += 1
+        if attempt == max_attempts:
+            print("Access denied")
+        else:
+            print("Incorrect password. Please try again.")
