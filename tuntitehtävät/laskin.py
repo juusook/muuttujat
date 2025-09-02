@@ -3,7 +3,7 @@ def laskin (operaatio, num1, num2)
         print(num1 * num2)
     elif operaatio == "+"
         print(num1 + num2)
-    else: print("en tiedä"
+    else: print("en tiedä")
 
 
 
