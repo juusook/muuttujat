@@ -1,4 +1,4 @@
-for luku in range(1, 100):
+for luku in range(1, 101):
 
     if luku % 3 == 0 and luku % 5 == 0:
         print("fizzbuzz")
