@@ -1,7 +1,7 @@
-def laskin (operaatio, num1, num2)
-    if operaatio == "*"
+def laskin (operaatio, num1, num2):
+    if operaatio == "*":
         print(num1 * num2)
-    elif operaatio == "+"
+    elif operaatio == "+":
         print(num1 + num2)
     else: print("en tiedä")
 
