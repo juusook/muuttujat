@@ -1,3 +1,3 @@
-käyttäjä = input('Anna nimesi: ')
-print("Hauska tavata, " + käyttäjä + "!")
+nimi = input('Anna nimesi: ')
+print("Hauska tavata, " + nimi + "!")
 

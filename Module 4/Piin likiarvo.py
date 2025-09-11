@@ -1,12 +1,12 @@
 import random
-N = input("Anna pisteiden määrä: ")
+N = int(input("Anna pisteiden määrä: "))
 n = 0
 count = 0
 
-while n != N:
-    x = random.randint(-100, 100) / 100
-    y = random.randint(-100, 100) / 100
-
+while count < N:
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    print(n)
     if x**2 + y**2 < 1:
         n += 1
     count += 1
