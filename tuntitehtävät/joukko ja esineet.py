@@ -5,7 +5,7 @@ pakatut.add(syote)  #lisää ensimmäisen syötteen
 while syote != "":
     syote = input("Anna esine (Enter lopettaa): ")
     if syote in pakatut:
-        print("Löytyy jo")
+        print("Löytyy jo"
     else:
         pakatut.add(syote)
 
