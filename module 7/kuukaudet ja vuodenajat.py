@@ -8,7 +8,6 @@ def get_season(month):
     elif month in (9, 10, 11):
         return "autumn"
 
-
 def main():
         month = int(input("Enter the number of a month (1-12): "))
 
@@ -17,6 +16,5 @@ def main():
             print(f"You entered: {month} The season is {season}.")
         else:
             print(f"You entered: {month} Please enter a number between 1 and 12.")
-
 
 main()
