@@ -23,6 +23,7 @@ class Car:
         self.travelled_distance += hours * self.current_speed
         return
 
+
 def race():
     cars = []
     for i in range(1, 11):
@@ -34,11 +35,15 @@ def race():
         for car in cars:
             car.accelerate(random.randint(-10, 15))
             car.drive(1)
-
         for car in cars:
             if car.travelled_distance > 10000:
+                winner = car
                 race_run = False
+                break
+    #lambda c: missä c on lamda funktion muuttuja
+    cars.sort(key=lambda c: c.travelled_distance, reverse=True)
     return cars
+
 
 
 race_results = race()
@@ -49,21 +54,3 @@ for i, car in enumerate(race_results[:3]):
 
 winner = race_results[0]
 print(f"\nWinner: {winner.license_plate} with {winner.travelled_distance:.1f} km!")
-
-
-
-
-
-'''lista = race()
-for car in lista:
-    print(car.license_plate)
-'''
-
-
-'''car = Car("ABC-123", 142)
-print(f"Initial distance: {car.travelled_distance} km")
-car.accelerate(30)
-print(f"Current speed: {car.current_speed} km/h")
-print(f"Distance after driving hours at 60 km/h: {car.travelled_distance} km")
-'''
-
