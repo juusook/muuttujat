@@ -35,10 +35,3 @@ car.accelerate(90)
 car.drive(1.5)
 print(f"Current speed: {car.current_speed} km/h")
 print(f"Distance after driving hours at 60 km/h: {car.travelled_distance} km")
-
-
-
-'''print(f"License plate: {car.license_plate} \nMaximum speed: "
-      f"{car.maximum_speed} km/h"
-      f"\nCurrent speed: {car.current_speed} km/h"
-      f" \nTravelled distance: {car.travelled_distance} km")'''
