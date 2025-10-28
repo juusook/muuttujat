@@ -8,7 +8,6 @@ class Elevator:
         self.current_floor = self.current_floor + 1
         print(f"Kerros {self.current_floor}")
 
-
     def floor_down(self):
         self.current_floor = self.current_floor - 1
         print(f"Kerros {self.current_floor}")
@@ -23,9 +22,11 @@ class Elevator:
             elif self.current_floor > chosen_floor:
                 self.floor_down()
 
-
-
-
+class Building:
+    def __init__(self):
+        elevators = []
+    def run_elevator(self,e_num, index ):
+        pass
 
 
 

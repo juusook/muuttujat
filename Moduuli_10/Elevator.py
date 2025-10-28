@@ -8,7 +8,6 @@ class Elevator:
         self.current_floor = self.current_floor + 1
         print(f"Kerros {self.current_floor}")
 
-
     def floor_down(self):
         self.current_floor = self.current_floor - 1
         print(f"Kerros {self.current_floor}")
@@ -22,7 +21,6 @@ class Elevator:
                 self.floor_up()
             elif self.current_floor > chosen_floor:
                 self.floor_down()
-
 
 
 h = Elevator(10, 1)
