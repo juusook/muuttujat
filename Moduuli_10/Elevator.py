@@ -2,7 +2,7 @@ class Elevator:
     def __init__(self, top_floor, bottom_floor):
         self.top = top_floor
         self.bottom = bottom_floor
-        self.current_floor = self.bottom
+        self.current_floor = 0
 
     def floor_up(self):
         self.current_floor = self.current_floor + 1
@@ -13,15 +13,13 @@ class Elevator:
         print(f"Kerros {self.current_floor}")
 
     def go_to_floor(self, chosen_floor):
-        chosen_floor = chosen_floor
         while True:
             if chosen_floor == self.current_floor:
                 break
-            elif self.current_floor < chosen_floor:
+            if self.current_floor < chosen_floor:
                 self.floor_up()
-            elif self.current_floor > chosen_floor:
+            if self.current_floor > chosen_floor:
                 self.floor_down()
-
 
 h = Elevator(10, 1)
 

@@ -5,7 +5,7 @@ hakusana = "xfiles"
 
 url = "https://api.tvmaze.com/search/shows?q=" + hakusana
 
-show = jso
+
 
 response = requests.get(url)
 

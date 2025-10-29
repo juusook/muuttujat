@@ -13,7 +13,6 @@ class Elevator:
         print(f"Kerros {self.current_floor}")
 
     def go_to_floor(self, chosen_floor):
-        chosen_floor = chosen_floor
         while True:
             if chosen_floor == self.current_floor:
                 break
@@ -25,12 +24,8 @@ class Elevator:
 class Building:
     def __init__(self):
         elevators = []
-    def run_elevator(self,e_num, index ):
+    def run_elevator(self,e_num, index):
         pass
-
-
-
-
 
 h = Elevator(10, 1)
 

@@ -45,7 +45,6 @@ def race():
     return cars
 
 
-
 race_results = race()
 print(f"Race completed! {len(race_results)} cars participated.")
 
