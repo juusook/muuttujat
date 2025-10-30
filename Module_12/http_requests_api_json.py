@@ -6,7 +6,6 @@ hakusana = "xfiles"
 url = "https://api.tvmaze.com/search/shows?q=" + hakusana
 
 
-
 response = requests.get(url)
 
 json_data = response.json()

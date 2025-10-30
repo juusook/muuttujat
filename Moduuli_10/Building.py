@@ -22,10 +22,13 @@ class Elevator:
                 self.floor_down()
 
 class Building:
-    def __init__(self):
-        elevators = []
-    def run_elevator(self,e_num, index):
-        pass
+    elevators = []
+    def __init__(self, bottom_floor, top_floor, e_num):
+        self.bottom_floor = bottom_floor
+        self.top_floor = top_floor
+
+    def run_elevator(self,e_num, target_floor):
+
 
 h = Elevator(10, 1)
 
