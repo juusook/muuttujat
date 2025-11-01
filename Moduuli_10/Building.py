@@ -35,7 +35,6 @@ class Building:
         elevator = self.elevators[e_num]
         elevator.go_to_floor(target_floor)
 
-
 # Test Building with multiple elevators
 building = Building(1, 10, 3)
 building.run_elevator(0, 5)
