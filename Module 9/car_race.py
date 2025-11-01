@@ -35,11 +35,13 @@ def race():
         for car in cars:
             car.accelerate(random.randint(-10, 15))
             car.drive(1)
+
         for car in cars:
             if car.travelled_distance > 10000:
                 winner = car
                 race_run = False
                 break
+
     #lambda c: missä c on lamda funktion muuttuja
     cars.sort(key=lambda c: c.travelled_distance, reverse=True)
     return cars
