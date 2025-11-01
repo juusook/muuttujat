@@ -21,6 +21,7 @@ class Elevator:
             elif self.current_floor > chosen_floor:
                 self.floor_down()
 
+
 class Building:
     def __init__(self, bottom_floor, top_floor, num_elevators):
         self.bottom_floor = bottom_floor
