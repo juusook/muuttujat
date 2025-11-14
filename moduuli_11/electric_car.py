@@ -11,8 +11,6 @@ class Car:
             self.current_speed = self.maximum_speed
         elif self.current_speed < 0:
             self.current_speed = 0
-        else:
-            self.current_speed = self.current_speed
         return
 
     def drive(self, travelled_hours = 0):
@@ -31,12 +29,12 @@ class GasolineCar(Car):
         super().__init__(license_plate, maximum_speed)
 
 
-
 car = Car("TEST-123", 150)
 print(f"Car created: {car.license_plate}, max speed: {car.maximum_speed}")
 
 electric = ElectricCar("ELEC-123", 200, 75.0)
-print(f"Electric car: {electric.license_plate}, max speed: {electric.maximum_speed}, battery: {electric.battery_capacity} kWh")
+print(f"Electric car: {electric.license_plate}, "
+      f"max speed: {electric.maximum_speed}, battery: {electric.battery_capacity} kWh")
 
 gasoline = GasolineCar("GAS-123", 180, 50.0)
 print(f"Gasoline car: {gasoline.license_plate}, max speed: {gasoline.maximum_speed}, tank: {gasoline.tank_volume} l")
