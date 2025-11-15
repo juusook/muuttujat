@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 # from Module_5.alkuluvut import primeNumber
 
-
 def primeNumber(luku):
     given_number = int(luku)
     is_prime_number = True
