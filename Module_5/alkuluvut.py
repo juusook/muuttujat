@@ -8,12 +8,4 @@ def primeNumber(luku):
             if given_number % number == 0:
                 is_prime_number = False
                 break
-    if is_prime_number:
-        print(given_number, "is a prime number")
-    else:
-        print(given_number, "Is not a prime number")
     return is_prime_number
-
-
-numero = primeNumber(input("Syötä luku: "))
-print(numero)
