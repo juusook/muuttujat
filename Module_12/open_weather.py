@@ -2,7 +2,6 @@ import json
 import requests
 
 avain = "7ec1a8950498d1ef3998510266e785d4"
-
 search = input("Enter municipality name: ")
 
 request = f"https://api.openweathermap.org/data/2.5/weather?q={search}&appid={avain}&units=metric&lang=fi"
